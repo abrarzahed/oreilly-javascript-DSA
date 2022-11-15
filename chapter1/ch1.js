@@ -160,3 +160,36 @@ var grades = [77, 73, 74, 81, 90];
 curve(grades, 5);
 console.log(grades); // displays 82,78,79,86,95
 */
+
+/****************************************** 
+COMMENT: variable scope   
+******************************************/
+/*
+function showScope() {
+  return scope;
+}
+var scope = "global";
+console.log(scope); // displays "global"
+console.log(showScope()); // displays "global"
+*/
+
+/*
+function showScope2() {
+  var scope = "local";
+  return scope;
+}
+var scope = "global";
+console.log(scope); // displays "global"
+console.log(showScope2()); // displays "local"
+*/
+
+/*
+function showScope3() {
+  scope = "local";
+  return scope;
+}
+scope = "global";
+console.log(scope); // displays "global"
+console.log(showScope3()); // displays "local"
+console.log(scope); // displays "local"
+*/
