@@ -193,3 +193,62 @@ console.log(scope); // displays "global"
 console.log(showScope3()); // displays "local"
 console.log(scope); // displays "local"
 */
+
+/****************************************** 
+COMMENT: recursion   
+******************************************/
+// function factorial(number) {
+//   if (number == 1) {
+//     return number;
+//   } else {
+//     return number * factorial(number - 1);
+//   }
+// }
+// console.log(factorial(5));
+/*
+function factorial(number) {
+  console.log(number);
+  if (number == 1) {
+    console.log(number);
+    return number;
+  } else {
+    return number * factorial(number - 1);
+  }
+}
+
+console.log(factorial(5));
+*/
+
+/****************************************** 
+COMMENT:  Objects and Object-Oriented Programming  
+******************************************/
+/*
+function Checking(amount) {
+  this.balance = amount;
+  this.deposit = deposit;
+  this.withdraw = withdraw;
+  this.toString = toString;
+}
+function deposit(amount) {
+  this.balance += amount;
+}
+function withdraw(amount) {
+  if (amount <= this.balance) {
+    this.balance -= amount;
+  }
+  if (amount > this.balance) {
+    console.log("Insufficient funds");
+  }
+}
+function toString() {
+  return "Balance: " + this.balance;
+}
+var account = new Checking(500);
+
+account.deposit(1000);
+console.log(account.toString()); // Balance: 1500
+account.withdraw(750);
+console.log(account.toString()); // Balance: 750
+account.withdraw(800); // displays "Insufficient funds"
+console.log(account.toString()); // Balance: 750
+*/
