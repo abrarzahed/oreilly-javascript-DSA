@@ -94,11 +94,13 @@ nums.forEach((e) => {
 });
 */
 
+/*
 var grades = [
   [89, 77],
   [76, 82, 81],
   [91, 94, 89, 99],
 ];
+*/
 /*
 var total = 0;
 var average = 0.0;
@@ -200,3 +202,13 @@ function printBothWay(arr) {
 }
 printBothWay(wordArr);
 */
+
+//=== creating array from string  ===//
+const str = "a quick brown fox jumps over the lazy dog";
+function makeArrayFromString(str) {
+  const words = str.split(" ");
+  for (let i = 0; i < words.length; i++) {
+    console.log(`Word ${i + 1}: ${words[i]}`);
+  }
+}
+makeArrayFromString(str);
