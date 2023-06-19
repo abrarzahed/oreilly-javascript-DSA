@@ -204,6 +204,7 @@ printBothWay(wordArr);
 */
 
 //=== creating array from string  ===//
+/*
 const str = "a quick brown fox jumps over the lazy dog";
 function makeArrayFromString(str) {
   const words = str.split(" ");
@@ -212,3 +213,18 @@ function makeArrayFromString(str) {
   }
 }
 makeArrayFromString(str);
+*/
+
+//=== searching for a value with the help of indexOf method  ===//
+/*
+const names = ["David", "Cynthia", "Raymond", "Clayton", "Jennifer"];
+function findName(arr, targetName) {
+  const index = arr.indexOf(targetName);
+  if (index !== -1) {
+    console.log(`Found ${targetName} at position ${index}`);
+  } else {
+    console.log(`${targetName} not found in array`);
+  }
+}
+findName(names, "Clayton");
+*/
