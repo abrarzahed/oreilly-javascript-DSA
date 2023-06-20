@@ -228,3 +228,32 @@ function findName(arr, targetName) {
 }
 findName(names, "Clayton");
 */
+//=== adding element to the beginning of an array without using unshift method  ===//
+/*
+const nums = [2, 3, 4, 5];
+function addElementAtBeginning(arr, element) {
+  for (let i = arr.length; i >= 0; i--) {
+    arr[i] = arr[i - 1];
+  }
+  arr[0] = element;
+  return arr;
+}
+nums;
+console.log(addElementAtBeginning(nums, 1)); // 1,2,3,4,5
+*/
+
+//=== removing an element from the beginning of an array without shift method  ===//
+/*
+const nums = [9, 1, 2, 3, 4, 5];
+function removeElementFromBeginning(arr) {
+  const copyArr = [];
+  for (let i = 0; i < nums.length; ++i) {
+    let item = arr[i + 1];
+    if (item !== undefined) {
+      copyArr.push(item);
+    }
+  }
+  return copyArr;
+}
+console.log(removeElementFromBeginning(nums));
+*/
