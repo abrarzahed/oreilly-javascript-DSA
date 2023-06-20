@@ -257,3 +257,11 @@ function removeElementFromBeginning(arr) {
 }
 console.log(removeElementFromBeginning(nums));
 */
+
+//=== inserting element at the middle of an array  ===//
+/*
+const nums = [1, 2, 3, 7, 8, 9];
+const newElements = [4, 5, 6];
+nums.splice(Math.round(newElements.length / 2 + 1), 0, "middle" + newElements);
+console.log(nums); // 1,2,3,4,5,6,7,8,9
+*/
