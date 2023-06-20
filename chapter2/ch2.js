@@ -332,3 +332,35 @@ for (let row = 0; row < grades.length; ++row) {
   average = 0.0;
 }
 */
+
+/****************************************** 
+COMMENT: arrays in object(OOP)   
+******************************************/
+/*
+class WeekTemps {
+  constructor() {
+    this.dataStore = [];
+  }
+
+  add(temp) {
+    this.dataStore.push(temp);
+  }
+  average() {
+    var total = 0;
+    for (var i = 0; i < this.dataStore.length; ++i) {
+      total += this.dataStore[i];
+    }
+    return total / this.dataStore.length;
+  }
+}
+const thisWeek = new WeekTemps();
+thisWeek.add(52);
+thisWeek.add(55);
+thisWeek.add(61);
+thisWeek.add(65);
+thisWeek.add(55);
+thisWeek.add(50);
+thisWeek.add(52);
+thisWeek.add(49);
+console.log(thisWeek.average());
+*/
