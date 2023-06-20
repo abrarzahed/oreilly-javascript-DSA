@@ -265,3 +265,48 @@ const newElements = [4, 5, 6];
 nums.splice(Math.round(newElements.length / 2 + 1), 0, "middle" + newElements);
 console.log(nums); // 1,2,3,4,5,6,7,8,9
 */
+
+//=== putting array's elements in order  ===//
+// const arr = [1, 4, 3, 5, 6, 8, -1];
+// arr.reverse();
+// console.log(arr);
+
+/****************************************** 
+COMMENT: iterator functions   
+******************************************/
+//=== non-array generating iterator functions  ===//
+/*
+function makeSquare(num) {
+  console.log(num, num * 2);
+}
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+arr.forEach(makeSquare);
+*/
+// var twod = [];
+// var rows = 5;
+// for (var i = 0; i < rows; ++i) {
+//   twod[i] = [];
+// }
+// console.log(twod);
+
+/*
+var grades = [
+  [89, 77, 78],
+  [76, 82, 81],
+  [91, 94, 89],
+];
+function printAverageMarks(arr) {
+  let total = 0;
+  let average = 0.0;
+  for (let row = 0; row < arr.length; row++) {
+    for (let col = 0; col < arr[row].length; col++) {
+      total += arr[row][col];
+    }
+    average = total / arr[row].length;
+    console.log(`Student ${row + 1} average: ${average.toFixed(2)}`);
+    total = 0;
+    average = 0.0;
+  }
+}
+printAverageMarks(grades);
+*/
