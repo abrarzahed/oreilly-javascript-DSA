@@ -378,3 +378,32 @@ age, a specific week’s average, and all the weeks’ averages.
 4. Create an object that stores individual letters in an array and has a function for
 displaying the letters as a single word.
 */
+
+/*=== exercise 1 : Create a grades object that stores a set of student grades in an object. Provide a
+function for adding a grade and a function for displaying the student’s grade average.  ===*/
+/*
+class StudentGrades {
+  constructor(studentName) {
+    this.grades = [];
+    this.name = studentName;
+  }
+  add(point) {
+    this.grades.push(point);
+  }
+  average() {
+    let total = 0;
+    let average = 0.0;
+    for (let i = 0; i < this.grades.length; i++) {
+      total += this.grades[i];
+      average = Math.abs(total / this.grades.length).toFixed(2);
+    }
+    console.log(`The average grade of ${this.name} is : ${average}`);
+  }
+}
+
+const student1 = new StudentGrades("Abrar");
+student1.add(30);
+student1.add(20);
+student1.add(45);
+student1.average();
+*/
