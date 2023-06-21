@@ -422,3 +422,49 @@ function printFromBothSide(arr) {
 }
 printFromBothSide(wordArr);
 */
+
+/*
+   exercise 3: Modify the weeklyTemps object in the chapter so that it stores a month’s worth of
+   data using a two-dimensional array. Create functions to display the monthly aver‐
+   age, a specific week’s average, and all the weeks’ averages.
+*/
+/*
+class Temps {
+  constructor() {
+    this.dataStore = [];
+  }
+
+  sum(accSum, temp) {
+    return accSum + temp;
+  }
+
+  add(temp) {
+    this.dataStore.push(temp);
+  }
+  calcAverageWeek(week) {
+    const weekTemps = this.dataStore[week - 1];
+    return weekTemps.reduce(this.sum) / weekTemps.length;
+  }
+
+  calcAverageAllWeek() {
+    const averageAllWeeks = this.dataStore.map((weekTemp) => {
+      return weekTemp.reduce(this.sum) / weekTemp.length;
+    });
+    return averageAllWeeks;
+  }
+
+  calcAverageMonthly() {
+    const average = this.calcAverageAllWeek();
+    return average.reduce(this.sum) / average.length;
+  }
+}
+const temps = new Temps();
+temps.add([52, 55, 61, 65, 55, 50, 52]);
+temps.add([62, 63, 64, 65, 52, 55, 60]);
+temps.add([60, 61, 52, 53, 60, 64, 55]);
+temps.add([52, 53, 61, 64, 51, 57, 58]);
+
+console.log(temps.calcAverageWeek(1));
+console.log(temps.calcAverageAllWeek());
+console.log(temps.calcAverageMonthly());
+*/
