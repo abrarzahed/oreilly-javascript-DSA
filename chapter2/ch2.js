@@ -407,3 +407,18 @@ student1.add(20);
 student1.add(45);
 student1.average();
 */
+
+/*
+   exercise 2: Store a set of words in an array and display the contents both forward and backward.
+*/
+/*
+const str =
+  "store a set of words in an array and display the contents both forward and backward";
+const wordArr = str.split(" ");
+
+function printFromBothSide(arr) {
+  console.log(arr);
+  console.log(arr.reverse().toString());
+}
+printFromBothSide(wordArr);
+*/
