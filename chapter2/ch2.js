@@ -468,3 +468,31 @@ console.log(temps.calcAverageWeek(1));
 console.log(temps.calcAverageAllWeek());
 console.log(temps.calcAverageMonthly());
 */
+
+/*
+   exercise 4: Create an object that stores individual letters in an array and has a function for
+   displaying the letters as a single word.
+*/
+/*
+class ArraysOfLetterFromWords {
+  constructor(str) {
+    this.words = str.split(" ");
+  }
+
+  makeArrayOfLetterAndPrint() {
+    const result = [];
+    for (let i = 0; i < this.words.length; i++) {
+      const subArray = this.words[i].split("");
+      const arr = [];
+      for (let j = 0; j < subArray.length; j++) {
+        arr.push(subArray[j]);
+      }
+      result.push(arr);
+    }
+    return result;
+  }
+}
+
+const wordsArray = new ArraysOfLetterFromWords("Abrar Hussen");
+console.log(wordsArray.makeArrayOfLetterAndPrint());
+*/
